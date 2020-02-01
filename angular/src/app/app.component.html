@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav class="nav justify-content-center">
+        <a class="nav-link" [routerLink]="'/dashboard'" routerLinkActive="active"> Dashboard </a>
+        <a class="nav-link" [routerLink]="'/profile'" routerLinkActive="active"> My Profile </a>
+        <a class="nav-link" [routerLink]="'/non-existing'" routerLinkActive="active"> Non Existing </a>
+      </nav>
+      <p class="card-text">
+        <router-outlet></router-outlet>
+      </p>
+    </div>
+  </div>
+</div>
+
